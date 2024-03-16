@@ -17,7 +17,7 @@ describe("PostsService", () => {
     const textPost = "Some pre-existing post";
     const arrayPosts = Object.values(post);
     // act
-    const findPost = arrayPosts.find((item) => item === textPost);
+    const findPost = arrayPosts.find((item) => item == textPost);
     //assert
     expect(findPost).toEqual(textPost);
   });
